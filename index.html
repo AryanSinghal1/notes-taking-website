@@ -8,60 +8,104 @@
     <link rel="stylesheet" href="./index.css">
 </head>
 <body>
-    <div class="Nav">
-        <h3>NOTIFY</h3>
-        <div class="links">
-          <a href="#main-content">My Notes</a>
-          <a href="#contact">About Us</a>
-          <a href="#contact">Contact Us</a>
-          <a id="trash">Trash</a>
+  <div class="Nav">
+    <h3>NOTIFY</h3>
+    <div class="links">
+      <a href="#main-content">My Notes</a>
+      <a href="#contact">About Us</a>
+      <a href="#contact">Contact Us</a>
+      <a id="trash">Trash</a>
+    </div>
+  </div>
+  <div class="main">
+    <div class="content">
+      <img src="./diary.png" />
+      <h1>Live Your Life A Hassle-Free Way</h1>
+      <h2>Start by creating a Note</h2>
+      <button class="btn">
+        <a href="#main-content">Click to create one</a>
+      </button>
+    </div>
+  </div>
+  <div id="main-content">
+    <h1><u>Your Notes</u></h1>
+    <div class="notes-container">
+      <div class="all-notes">
+        <div class="note-div">
+          <img src="./plus.png" />
         </div>
       </div>
-      <div class="main">
-        <div class="content">
-          <img src="./diary.png" />
-          <h1>Live Your Life A Hassle-Free Way</h1>
-          <h2>Start by creating a Note</h2>
-          <button class="btn">
-            <a href="#main-content">Click to create one</a>
-          </button>
-        </div>
-      </div>
-      <div id="main-content">
-        <h1><u>Your Notes</u></h1>
-        <div class="notes-container">
-          <div class="all-notes">
-            <div class="note-div">
-              <img src="./plus.png" />
-            </div>
+    </div>
+    <div class="create-container">
+      <div class="note-container">
+        <div class="note-container1">
+          <h3>Enter Title</h3>
+          <input type="text" id="title" placeholder="Enter Title" />
+          <h3>Enter Description</h3>
+          <textarea type="text" id="desc" placeholder="Enter Description" rows="4" cols="50"></textarea>
+          <div class="btns">
+            <button id="create" class="btn1">Create</button>
+            <button id="exit" class="btn1">Cancel</button>
           </div>
         </div>
-        
       </div>
-      <div id="contact">
-        <div class="about">
-          <div class="about-name">
-            <h1>NOTIFY</h1>
-          </div>
-          <div class="about-info">
-            <div>
-              <h2>About Us</h2>
-              <p>Notify is a website to help you create</p>
-              <p>Notes anytime anywhere free of cost.</p>
-            </div>
-            <div>
-              <h2>Contact Us</h2>
-              <img src="./instagram.png" />
-              <img src="./facebook.png" />
-              <img src="./email.png" />
-              <img src="./linkedin.png" />
-            </div>
+    </div>
+    <div class="create-container create-container1">
+      <div class="note-container">
+        <div class="note-container1">
+          <div id="edit-title"></div>
+          <div id="edit-desc"></div>
+          <div class="btns btns2">
           </div>
         </div>
-        <div class="line">
-          <p>Notes App &copy; 2021. All Rights Reserved.</p>
+      </div>
+    </div>
+    <div class="create-container create-container2">
+      <div class="note-container">
+        <div class="note-container1">
+          <h3>Enter Title</h3>
+          <input type="text" id="title-edit" placeholder="Enter Title" />
+          <h3>Enter Description</h3>
+          <textarea type="text" id="desc-edit" placeholder="Enter Description" rows="4" cols="50"></textarea>
+          
+          <div class="btns btns3">
+          </div>
         </div>
       </div>
-      <script src="index.js"></script>  
+    </div>
+  </div>
+  <div id="deleted-content">
+    <h1><u>Deleted Notes</u></h1>
+    <button class="exitBtn">Exit</button>
+    <div class="notes-container del">
+      <div class="all-notes1">
+      </div>
+    </div>
+    </div>
+  <div id="contact">
+    <div class="about">
+      <div class="about-name">
+        <h1>NOTIFY</h1>
+      </div>
+      <div class="about-info">
+        <div>
+          <h2>About Us</h2>
+          <p>Notify is a website to help you create</p>
+          <p>Notes anytime anywhere free of cost.</p>
+        </div>
+        <div>
+          <h2>Contact Us</h2>
+          <img src="./instagram.png" />
+          <img src="./facebook.png" />
+          <img src="./email.png" />
+          <img src="./linkedin.png" />
+        </div>
+      </div>
+    </div>
+    <div class="line">
+      <p>Notes App &copy; 2021. All Rights Reserved.</p>
+    </div>
+  </div>
+  <script src="./index.js"></script>
 </body>
 </html>
