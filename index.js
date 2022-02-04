@@ -45,7 +45,7 @@ function showNotes() {
   }
   console.log(NoteObj);
   let html = `<div onClick = "dispCreate()" class="note-div">
-  <img src="./plus.png">
+  <img src="./Images/plus.png">
   </div>`;
   NoteObj.forEach((element, index) => {
     html =
@@ -65,7 +65,7 @@ function showNotes() {
   } else {
     allNotes.innerHTML = 
     `<div onClick = "dispCreate()" class="note-div">
-    <img src="./plus.png">
+    <img src="./Images/plus.png">
     </div>`;
   }
 }
